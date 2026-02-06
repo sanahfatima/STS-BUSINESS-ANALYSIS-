@@ -21,6 +21,7 @@ CREATE TABLE src_clients (
 - Their status/portal access (username for client is their client_id)
 
 ### Services: 
+```sql
 CREATE TABLE src_services (
     id              BIGINT PRIMARY KEY,
     service_name    TEXT,
@@ -28,9 +29,11 @@ CREATE TABLE src_services (
     base_price      NUMERIC(12,2),
     active_flag     BOOLEAN, 
     created_at      TIMESTAMP);
+```
 ### Answers: Service catalog (theory excluded) 
 
 ### Invoices: 
+```sql
 CREATE TABLE src_invoices (
     id              BIGINT PRIMARY KEY,
     client_id       BIGINT,
@@ -42,12 +45,14 @@ CREATE TABLE src_invoices (
     amount_paid     NUMERIC(12,2),
     payment_method  TEXT
 );
+```
 ### Answers: (need to add more columns) 
 - Over the year invoices paid info per client 
 - Financial/revenue findings 
 - Need to differentiate gov and sts fee
 
 ### Orders: 
+```sql
 CREATE TABLE src_order_services (
     id              BIGINT PRIMARY KEY,
     invoice_id      BIGINT,
@@ -56,6 +61,7 @@ CREATE TABLE src_order_services (
     quantity        INT DEFAULT 1,
     unit_price     NUMERIC(12,2),
     created_at      TIMESTAMP);
+```
 ### Answers: (need to add more columns)
 Tracking services per client 
 Tracking renewals 
