@@ -5,6 +5,7 @@ table names and columns to be added, what is the table answering mentioned
 additions in tables, columns are welcome. 
 
 ### Clients: 
+```sql
 CREATE TABLE src_clients (
     id              BIGINT PRIMARY KEY,
     client_name     TEXT,
@@ -12,7 +13,8 @@ CREATE TABLE src_clients (
     country         TEXT,
     state           TEXT,
     created_at      TIMESTAMP,
-    status          TEXT); (active, not active) 
+    status          TEXT); (active, not active)
+```
 ### Answers: 
 - Is our client?
 - When they joined 
