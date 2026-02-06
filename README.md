@@ -1,6 +1,6 @@
 # STS Business Analysis
 
-This repository documents the end-to-end business analysis and data strategy for STS. It serves as a centralized source of truth for business objectives, analytical approach, and technical implementation.
+This repository documents the end-to-end business analysis and data strategy for Sky Transport Solutions (STS). It serves as a centralized source for business objectives, analytical approach, and technical implementation.
 
 The repository covers the design and development of the Master Client Data model and supporting source tables, including dataset processing logic, column definitions, data transformations, and validation rules. It also includes the creation of service catalogs, data infrastructure planning, and standardized business processes.
 
